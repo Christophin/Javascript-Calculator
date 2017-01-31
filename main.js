@@ -194,6 +194,16 @@ function equalClick ()  {
   buildDisplay();
 }
 
+function decimalClick ()  {
+  if (operator === "")  {
+    left += ".";
+  } else {
+    right += ".";
+
+  }
+  buildDisplay();
+}
+
 clearButton.addEventListener('click', clearClick);
 sevenButton.addEventListener('click', sevenClick);
 eightButton.addEventListener('click', eightClick);
@@ -208,6 +218,6 @@ twoButton.addEventListener('click', twoClick);
 threeButton.addEventListener('click', threeClick);
 subtractButton.addEventListener('click', subtractClick);
 zeroButton.addEventListener('click', zeroClick);
-//decimalButton.addEventListener('click', decimalClick);
+decimalButton.addEventListener('click', decimalClick);
 equalButton.addEventListener('click', equalClick);
 plusButton.addEventListener('click', plusClick);
