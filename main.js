@@ -50,101 +50,91 @@ function doCalculation ()  {
 function sevenClick ()  {
   if (operator === "") {
     left += "7";
-    buildDisplay();
   } else {
     right += "7";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function eightClick ()  {
   if (operator === "") {
     left += "8";
-    buildDisplay();
   } else {
     right += "8";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function nineClick ()  {
   if (operator === "") {
     left += "9";
-    buildDisplay();
   } else {
     right += "9";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function fourClick ()  {
   if (operator === "") {
     left += "4";
-    buildDisplay();
   } else {
     right += "4";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function fiveClick ()  {
   if (operator === "") {
     left += "5";
-    buildDisplay();
   } else {
     right += "5";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function sixClick ()  {
   if (operator === "") {
     left += "6";
-    buildDisplay();
   } else {
     right += "6";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function oneClick ()  {
   if (operator === "") {
     left += "1";
-    buildDisplay();
   } else {
     right += "1";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function twoClick ()  {
   if (operator === "") {
     left += "2";
-    buildDisplay();
   } else {
     right += "2";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function threeClick ()  {
   if (operator === "") {
     left += "3";
-    buildDisplay();
   } else {
     right += "3";
-    buildDisplay();
   };
+  buildDisplay();
 };
 
 function zeroClick ()  {
   if (operator === "") {
-    left += "7";
-    buildDisplay();
+    left += "0";
   } else {
-    right += "7";
-    buildDisplay();
+    right += "0";
   };
+  buildDisplay();
 };
 
 function plusClick () {
@@ -173,7 +163,7 @@ function multiplyClick () {
   } else {
     doCalculation();
     operator = "*";
-  };//this guy is in charge of buildDisplay TODO
+  };
   buildDisplay();
 };
 
