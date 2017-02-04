@@ -1,5 +1,5 @@
 var clearButton = document.getElementById("clear");
-var displayBox = document.getElementById("display")
+var displayBox = document.getElementById("display");
 var sevenButton = document.getElementById("seven");
 var eightButton = document.getElementById("eight");
 var nineButton = document.getElementById("nine");
@@ -15,7 +15,7 @@ var subtractButton = document.getElementById("subtract");
 var zeroButton = document.getElementById("zero");
 var decimalButton = document.getElementById("decimal");
 var equalButton = document.getElementById("equal");
-var plusButton = document.getElementById("plus")
+var plusButton = document.getElementById("plus");
 
 var left = "";
 var operator = "";
@@ -24,14 +24,14 @@ var right = "";
 
 function buildDisplay () {
   displayBox.innerHTML = left + " " + operator + " " + right;
-};
+}
 
 function clearClick () {
   left = "";
   operator = "";
   right = "";
   buildDisplay();
-};
+}
 
 function doCalculation ()  {
   if (operator === "+") {
@@ -42,7 +42,7 @@ function doCalculation ()  {
     left = Number(left) * Number(right);
   } else if (operator === "/")  {
     left = Number(left) / Number(right);
-  };
+  }
   right = "";
   buildDisplay();
 }
@@ -52,90 +52,90 @@ function sevenClick ()  {
     left += "7";
   } else {
     right += "7";
-  };
+  }
   buildDisplay();
-};
+}
 
 function eightClick ()  {
   if (operator === "") {
     left += "8";
   } else {
     right += "8";
-  };
+  }
   buildDisplay();
-};
+}
 
 function nineClick ()  {
   if (operator === "") {
     left += "9";
   } else {
     right += "9";
-  };
+  }
   buildDisplay();
-};
+}
 
 function fourClick ()  {
   if (operator === "") {
     left += "4";
   } else {
     right += "4";
-  };
+  }
   buildDisplay();
-};
+}
 
 function fiveClick ()  {
   if (operator === "") {
     left += "5";
   } else {
     right += "5";
-  };
+  }
   buildDisplay();
-};
+}
 
 function sixClick ()  {
   if (operator === "") {
     left += "6";
   } else {
     right += "6";
-  };
+  }
   buildDisplay();
-};
+}
 
 function oneClick ()  {
   if (operator === "") {
     left += "1";
   } else {
     right += "1";
-  };
+  }
   buildDisplay();
-};
+}
 
 function twoClick ()  {
   if (operator === "") {
     left += "2";
   } else {
     right += "2";
-  };
+  }
   buildDisplay();
-};
+}
 
 function threeClick ()  {
   if (operator === "") {
     left += "3";
   } else {
     right += "3";
-  };
+  }
   buildDisplay();
-};
+}
 
 function zeroClick ()  {
   if (operator === "") {
     left += "0";
   } else {
     right += "0";
-  };
+  }
   buildDisplay();
-};
+}
 
 function plusClick () {
   if (operator === "")  {
@@ -143,9 +143,9 @@ function plusClick () {
   } else  {
       doCalculation();
       operator = "+";
-  };
+  }
   buildDisplay();
-};
+}
 
 function subtractClick () {
   if (operator === "")  {
@@ -153,9 +153,9 @@ function subtractClick () {
   } else {
     doCalculation();
     operator = "-";
-  };
+  }
   buildDisplay();
-};
+}
 
 function multiplyClick () {
   if (operator === "")  {
@@ -163,9 +163,9 @@ function multiplyClick () {
   } else {
     doCalculation();
     operator = "*";
-  };
+  }
   buildDisplay();
-};
+}
 
 
 function divideClick () {
@@ -173,10 +173,10 @@ function divideClick () {
       operator = "/";
     } else {
       doCalculation();
-      operator = "/"
-    };
+      operator = "/";
+    }
     buildDisplay();
-};
+}
 
 function equalClick ()  {
   doCalculation ();
